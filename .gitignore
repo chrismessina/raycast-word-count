@@ -3,5 +3,9 @@
 # dependencies
 /node_modules
 
+# swift build artifacts
+/swift/.build
+/swift/Package.resolved
+
 # misc
 .DS_Store
