@@ -5,6 +5,7 @@
 
 # swift build artifacts
 /swift/.build
+/swift/.raycast-swift-build
 /swift/Package.resolved
 
 # misc
