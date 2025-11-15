@@ -9,7 +9,7 @@
 
 type ExtensionPreferences = {
   /** OCR Language - Language for OCR text recognition */
-  "ocrLanguage": "en-US" | "es" | "fr" | "de" | "it" | "pt" | "zh-Hans" | "zh-Hant" | "ja" | "ko" | "ru" | "ar",
+  "ocrLanguage": "en" | "es" | "fr" | "de" | "it" | "pt" | "zh-Hans" | "zh-Hant" | "ja" | "ko" | "ru" | "ar",
   /** undefined - Play camera shutter sound when capturing screenshots */
   "playSound": boolean
 }
