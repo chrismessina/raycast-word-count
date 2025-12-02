@@ -7,24 +7,7 @@
 
 /* eslint-disable @typescript-eslint/ban-types */
 
-type ExtensionPreferences = {
-  /** OCR Language - Language for OCR text recognition */
-  "ocrLanguage": "en" | "es" | "fr" | "de" | "it" | "pt" | "zh-Hans" | "zh-Hant" | "ja" | "ko" | "ru" | "ar",
-  /** undefined - Play camera shutter sound when capturing screenshots */
-  "playSound": boolean,
-  /** Screenshot Result Stats - Choose which metrics appear in the screenshot HUD */
-  "showStatCharacters": boolean,
-  /** undefined - Show the total word count in the screenshot HUD */
-  "showStatWords": boolean,
-  /** undefined - Show the sentence count in the screenshot HUD */
-  "showStatSentences": boolean,
-  /** undefined - Show the paragraph count in the screenshot HUD */
-  "showStatParagraphs": boolean,
-  /** undefined - Show the estimated time to read in the screenshot HUD */
-  "showStatReadingTime": boolean,
-  /** undefined - Show the estimated time to speak in the screenshot HUD */
-  "showStatSpeakingTime": boolean
-}
+type ExtensionPreferences = {}
 
 /** Preferences accessible in all the extension's commands */
 declare type Preferences = ExtensionPreferences
@@ -44,7 +27,7 @@ declare namespace Arguments {
 }
 
 declare module "swift:*/swift" {
-  export function recognizeTextFromScreenshot(playSound: boolean, language: string): Promise<string>;
+  export function recognizeTextFromScreenshot(): Promise<string>;
 
   export class SwiftError extends Error {
     stderr: string;
