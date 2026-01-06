@@ -26,11 +26,3 @@ declare namespace Arguments {
   export type CountScreenshot = {}
 }
 
-declare module "swift:*/swift" {
-  export function recognizeTextFromScreenshot(): Promise<string>;
-
-  export class SwiftError extends Error {
-    stderr: string;
-    stdout: string;
-  }
-}

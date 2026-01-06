@@ -20,7 +20,10 @@
   "platforms": [
     "macOS",
     "Windows"
-  ],  
+  ],
+  "crossExtensions": [
+    "huzef44/screenocr"
+  ],
   "commands": [
     {
       "name": "count",
@@ -41,6 +44,9 @@
       "subtitle": "Word Count",
       "description": "Capture a screenshot and count words, characters, sentences, and paragraphs using OCR.",
       "mode": "no-view",
+      "platforms": [
+        "macOS"
+      ],
       "keywords": [
         "screenshot",
         "ocr",
@@ -53,8 +59,9 @@
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.103.6",
+    "@raycast/api": "^1.104.1",
     "@raycast/utils": "^2.2.2",
+    "raycast-cross-extension": "^0.2.3",
     "react": "^19.2.0"
   },
   "devDependencies": {
