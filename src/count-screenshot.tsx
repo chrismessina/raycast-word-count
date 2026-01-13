@@ -42,7 +42,8 @@ export default async function Command({ launchContext }: LaunchProps<{ launchCon
   if (process.platform === "win32") {
     await confirmAlert({
       title: "Not Supported on Windows",
-      message: "Screenshot text recognition requires macOS. This feature uses the ScreenOCR extension which is not available on Windows.",
+      message:
+        "Screenshot text recognition requires macOS. This feature uses the ScreenOCR extension which is not available on Windows.",
       icon: Icon.Warning,
       primaryAction: {
         title: "OK",
